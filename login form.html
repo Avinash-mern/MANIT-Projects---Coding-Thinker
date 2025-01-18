@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .box {
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            padding: 20px 100px;
+            position: relative; /* Required for pseudo-elements */
+            border: 5px solid grey; /* Transparent initial border */
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: white;
+            padding: 10px 100px;
+            border-radius: 20px;
+        }
+        input {
+            padding: 10px 50px;
+            text-align: left;
+        }
+        button:hover {
+            background-color: pink;
+        }
+        /* @keyframes spin-border {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="text" placeholder="username"><br><br>
+            <input type="password" placeholder="password"><br><br>
+            <button >Login</button>
+            <h6><u>Forgot password?</u></h6>
+            <h5>Don't have an account? Register</h5>
+        </div>
+    </div>
+</body>
+</html>
